@@ -12,6 +12,7 @@ type DivideError struct {
 }
 
 // 实现`error`接口
+// 为指针定义的方法
 func (de *DivideError) Error() string {
 	strFormat := `
 	Cannot proceed, the divider is zero.
